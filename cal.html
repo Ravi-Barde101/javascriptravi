@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <label>Number1</label>
+        <input type="text" id="num1">
+        <br><br>
+        <label>Number2</label>
+        <input type="text" id="num2">
+        <br><br>
+        <input type="button" onclick="sum()" value="+">
+        <br><br>
+        <input type="button" onclick="minus()" value="-">
+        <br><br>
+        <label id="show-here">Show result..</label>
+        <script>
+            function sum(){
+                let number1 = document.getElementById("num1").value;
+                let number2 = document.getElementById("num2").value;
+                let total = parseInt(number1)+parseInt(number2);
+                document.getElementById("show-here").innerHTML = total;
+            }
+            function minus(){
+                let number1 = document.getElementById("num1").value;
+                let number2 = document.getElementById("num2").value;
+                let total = parseInt(number1)-parseInt(number2);
+                document.getElementById("show-here").innerHTML = total;
+            }
+        </script>
+    </body>
+</html>

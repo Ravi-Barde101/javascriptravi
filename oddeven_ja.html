@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <Label>enter number</Label>
+        <input type="text" id="f_num">
+        <button onclick="loop()"> click </button>
+        <span id="check"> ckeck</span>
+    </body>
+    <script>
+        function loop(){
+            let a=parseInt(document.getElementById("f_num").value);
+            if (a%4==0) {document.getElementById("check").innerHTML="even"
+                
+            }
+            else{
+                document.getElementById("check").innerHTML="odd"
+            }
+        }
+    </script>
+</html>

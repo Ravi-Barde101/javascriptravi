@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Start</title>
+    </head>
+    <body>
+        <label>First Num</label>
+        <input type="text" id="f_num"><br><br>
+        <label>Second Num</label>
+        <input type="text" id="s_num"><br><br>
+        <button onclick="sum()">+</button><button onclick="minus()">-</button><br><br>
+        <span id="total">Print total here...</span>
+        <script>
+            function sum(){
+                let fNum = parseInt(document.getElementById("f_num").value);
+                let sNum = parseInt(document.getElementById("s_num").value);
+                let total = fNum + sNum;
+                document.getElementById("total").innerHTML = total;
+            }
+            function minus(){
+                let fNum = parseInt(document.getElementById("f_num").value);
+                let sNum = parseInt(document.getElementById("s_num").value);
+                let total = fNum - sNum;
+                document.getElementById("total").innerHTML = total;
+            }
+        </script>
+    </body>
+</html>

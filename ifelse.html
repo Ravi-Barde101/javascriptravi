@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Start</title>
+    </head>
+    <body>
+        <label>First Num</label>
+        <input type="text" id="f_num"><br><br>
+        <label>Second Num</label>
+        <input type="text" id="s_num"><br><br>
+        <label>Third Num</label>
+        <input type="text" id="l_num"><br><br>
+        <button onclick="check()">Check</button><br><br>
+        <span id="check">check here...</span>
+        <script>           
+            function check(){
+                var a = parseInt(document.getElementById("f_num").value); 
+                var b = parseInt(document.getElementById("s_num").value);
+                var c = parseInt(document.getElementById("l_num").value);
+                if(a == b && a == c){
+                    document.getElementById("check").innerHTML = "All are equal.";
+                }
+                if(a > b && a > c){
+                    document.getElementById("check").innerHTML = "a is geater.";
+                }
+                if(b > a && b > c){
+                    document.getElementById("check").innerHTML = "b is geater.";
+                }
+                if(c > a && c > b){
+                    document.getElementById("check").innerHTML = "c is geater.";
+                }
+                if(a == b && c < a){
+                    document.getElementById("check").innerHTML = "a and b is geater c and a and b equal.";
+                }
+                if(a == c && b < a){
+                    document.getElementById("check").innerHTML = "a and c is geater b and a and c equal.";
+                }
+                if(b == c && a < b){
+                    document.getElementById("check").innerHTML = "b and c is geater a and b and c equal.";
+                }
+            }
+        </script>
+    </body>
+</html>

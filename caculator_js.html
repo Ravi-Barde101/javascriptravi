@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            let num1=prompt("1st number");
+            let num2=prompt("2st number");
+            let opr=prompt("+,-,*,/");
+            switch (opr) {
+                case "+":
+                    let res = parseFloat(num1)+ parseFloat(num2);
+                    console.log(`${num1} + ${num2} = ${res}`);
+                    
+                    break;
+                    case "-":
+                    let result = parseFloat(num1)- parseFloat(num2);
+                    console.log(`${num1} - ${num2} = ${result}`);
+                    
+                    break;
+                    case "*":
+                    let key = parseFloat(num1)* parseFloat(num2);
+                    console.log(`${num1} * ${num2} = ${key}`);
+                      
+                    break;
+                    case "/":
+                    let keyes = parseFloat(num1) / parseFloat(num2);
+                    console.log(`${num1} / ${num2} = ${keyes}`);
+                    
+                    break;
+            
+                default:
+                    console.log("invaild");
+                    break;
+            }
+        </script>
+    </body>
+</html>

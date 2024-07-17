@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <label>Enter name</label>
+        <input type="text" id="f_num">
+        <button  onclick="leapyear()"> Click</button>
+        <span id="check">check here</span>
+    </body>
+    <script>
+        function leapyear(){
+            let a=parseInt(document.getElementById("f_num").value);
+            if (a>=18) { document.getElementById("check").innerHTML="Eligible for vote";
+            
+                
+            }
+            else{
+                document.getElementById("check").innerHTML=" not Eligible for vote"
+            }
+        }
+    </script>
+</html>
